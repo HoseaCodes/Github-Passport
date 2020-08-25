@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Github Passport</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Github Passport</h1>
+        <% if (!user) { %>
+        <p>
+            <a href="/">Home</a> |
+            <a href="/login">Log In</a>
+        </p>
+        <% } else { %>
+        <p>
+            <a href="/">Home</a> |
+            <a href="/account">Account</a> |
+            <a href="/logout">Log Out</a>
+        </p>
+        <% } %>
+        <form action="/auth/github">
+            <% if (user == null) { %>
+            <button> <a href="/auth/github">Github Login</a></button>
+            <% } else { %>
+            <button> <a href="/logout">Log Out</a> </button>
+            <% } %>
+        </form>
+    </header>
+    <% if (!user) { %>
+    <h2>Hey! Please log in.</h2>
+    <% } else { %>
+    <h2>Hello, <%= user.displayName %>.</h2>
+    <% } %>
+    <div>
+    </div>
+
+</body>
+
+</html>
