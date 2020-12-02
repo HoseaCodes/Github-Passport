@@ -7,7 +7,7 @@ router.get('/', indexCtrl.index);
 
 router.get('/auth/github', passport.authenticate(
     'github',
-    { scope: ['user:email'] }
+    { scope: ['user:email', 'public_repo', 'user:follow', 'read:user'] }
 ));
 
 router.get('/auth/github/callback', passport.authenticate(
