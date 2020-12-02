@@ -32,5 +32,5 @@ ____________________
 ## Getting Started
 ____________________
 
-[Click here]() to open app in browser.
+[Click here](https://github-passport.herokuapp.com/) to open app in browser.
 ____________________
