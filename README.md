@@ -8,9 +8,9 @@ ____________________
 
 Data Structre
 
-[Router](https://i.imgur.com/YG92q3I.png)
+![Router](https://i.imgur.com/YG92q3I.png)
 
-[Passport](https://i.imgur.com/k0j1DHu.png)
+![Passport](https://i.imgur.com/k0j1DHu.png)
 
 
 ____________________
